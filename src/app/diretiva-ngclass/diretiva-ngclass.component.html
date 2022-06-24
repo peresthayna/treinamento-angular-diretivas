@@ -1,0 +1,22 @@
+<div class="container">
+
+  <h5>Utilizando property binding</h5>
+  <h1>
+    <i class="bi"
+    [class.bi-star]="!meuFavorito"
+    [class.bi-star-fill]="meuFavorito"
+    (click)="onFavorito()"></i>
+  </h1>
+
+  <h5>Utilizando ngClass</h5>
+  <h1>
+    <i class="bi"
+    [ngClass]="
+    {
+      'bi-star': !meuFavorito,
+      'bi-star-fill': meuFavorito
+    }"
+    (click)="onFavorito()"></i>
+  </h1>
+</div>
+<br><hr><br>

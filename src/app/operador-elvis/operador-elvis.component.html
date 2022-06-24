@@ -1,0 +1,5 @@
+<p>Descrição: {{ tarefa.descricao }}</p>
+<p>Responsável: {{ tarefa.responsavel != null ? tarefa.responsavel.nome: '' }}</p>
+<p>Responsável: {{ tarefa.responsavel?.usuario?.nome }}</p> 
+<!-- operador elvis depois do objeto verifica se é nulo, se for, fica vazio para não dar erro
+     se não for nulo, mostra o atributo/propriedade-->
